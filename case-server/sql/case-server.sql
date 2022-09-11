@@ -1,3 +1,9 @@
+# drop database if exists case_manager;
+
+create database case_manager;
+
+use case_manager;
+
 CREATE TABLE `case_backup` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
   `case_id` bigint(20) NOT NULL DEFAULT '0' COMMENT '用例集id',
