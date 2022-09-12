@@ -12,7 +12,7 @@ import {
   Row,
   Col,
   TreeSelect,
-} from 'antd';
+} from 'react-weui';
 const { Dragger } = Upload;
 import './index.scss';
 const initData = `{"root":{"data":{"id":"bv8nxhi3c800","created":1562059643204,"text":"中心主题"},"children":[]},"template":"default","theme":"fresh-blue","version":"1.4.43","base":0}`;

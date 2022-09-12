@@ -1,0 +1,55 @@
+http:
+  port: 8094
+
+https:
+  ssl:
+    enable: true
+    key-store: classpath:keystore.p12
+    key-store-password: 12345678
+    keyAlias: tomcat
+    keyStoreType: PKCS12
+
+logging:
+  config: classpath:log4j2.xml
+
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+  typeAliasesPackage: com.tencent.wxpf.casemgr.*
+
+server:
+  port: 8443
+
+spring:
+  profiles:
+    active: dev
+
+  application:
+    name: case-server
+
+  datasource:
+    druid:
+      connection-init-sqls: set names utf8mb4
+
+  devtools:
+    add-properties: false
+
+  mvc:
+    static-path-pattern: /**
+
+  resources:
+    static-locations: classpath:/web/dist/
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 101MB
+
+  thymeleaf:
+    cache: false
+    encoding: utf-8
+    mode: LEGACYHTML5
+    prefix: classpath:/web/dist/
+    servlet:
+      content-type: text/html
+
+    suffix: .html

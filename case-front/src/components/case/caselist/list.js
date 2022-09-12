@@ -549,7 +549,7 @@ class Lists extends React.Component {
         router.push(url);
       },
       onCancel() {},
-      icon: <Icon type="question-circle" style={{ color: '#1890FF' }} />,
+      icon: <Icon type="question-circle" style={{ color: '#07C160' }} />,
       cancelText: '取消',
       okText: '确认',
     });

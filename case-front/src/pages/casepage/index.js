@@ -5,6 +5,7 @@ import { Layout, Icon, Menu, Dropdown, message } from 'antd'
 import getQueryString from '@/utils/getCookies'
 import '../landing/less/index.less'
 import request from '@/utils/axios'
+import logoImg from '../landing/img/wechat_pay_logo.png'
 const { Header } = Layout
 const getCookies = getQueryString.getCookie
 
@@ -41,8 +42,9 @@ class casePage extends React.Component {
     return getCookies('username') ? (
       <section style={{ marginBottom: 30 }}>
         <Header style={{ zIndex: 9 }}>
+          <img src={logoImg} className="title-logo" alt="wechat-pay-logo" />
           <a href="/" style={{ color: '#fff', fontSize: 24 }}>
-            JFUnitTestCaseManager
+            JFTestCaseManager
           </a>
           {getCookies('username') ? (
             <Dropdown overlay={menu} overlayClassName="dropStyle" placement="bottomLeft">

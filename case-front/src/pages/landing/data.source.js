@@ -1,6 +1,7 @@
 import React from 'react'
-import logoImg from './img/atclogo4.png'
+import logoImg from './img/wechat_pay_logo.png'
 import getQueryString from '@/utils/getCookies'
+
 const getCookies = getQueryString.getCookie
 export const Banner30DataSource = {
   wrapper: { className: 'banner3' },
@@ -12,9 +13,9 @@ export const Banner30DataSource = {
         className: 'banner3-slogan',
         children: (
           <div>
-            <img src={logoImg} className="banner3-logo" />
+            <img src={logoImg} className="banner3-logo" alt="wechat-pay-logo" />
             <br />
-            <span>JFUnitTestCaseManager</span>
+            <span>JFTestCaseManager</span>
           </div>
         ),
       },
@@ -23,7 +24,7 @@ export const Banner30DataSource = {
         className: 'banner3-name',
         children: (
           <span>
-            <p>一套敏捷的测试用例管理平台</p>
+            <p>项目测试用例管理/远程执行平台</p>
           </span>
         ),
       },
@@ -59,7 +60,7 @@ export const Footer00DataSource = {
     children: (
       <span>
         <p>
-          <span>©2020 JFUnitTestCaseManager</span>
+          <span>©2022 JFTestCaseManager</span>
         </p>
       </span>
     ),

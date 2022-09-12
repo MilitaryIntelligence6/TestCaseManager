@@ -7,6 +7,8 @@ import Banner3 from './Banner3'
 import Footer0 from './Footer0'
 import request from '@/utils/axios'
 import getQueryString from '@/utils/getCookies'
+import logoImg from './img/wechat_pay_logo.png'
+
 const getCookies = getQueryString.getCookie
 const { Header } = Layout
 
@@ -93,8 +95,9 @@ export default class Home extends React.Component {
         }}
       >
         <Header style={{ zIndex: 9 }}>
+          <img src={logoImg} className="title-logo" alt="wechat-pay-logo" style={{}} />
           <a href="/" style={{ color: '#fff', fontSize: 24 }}>
-            JFUnitTestCaseManager
+            JFTestCaseManager
           </a>
           {getCookies('username') ? (
             <Dropdown overlay={menu} overlayClassName="dropStyle" placement="bottomLeft">

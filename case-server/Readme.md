@@ -41,4 +41,5 @@ AgileTC 是一套敏捷的线上测试用例管理平台，支持测试用例集
     - mvn spring-boot:run 
     - 浏览器打开 http://localhost:8094/case/caseList/1
 
++ xmind 中 entity 先不 Kt 化, 会出问题
 
