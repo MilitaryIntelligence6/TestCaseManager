@@ -62,7 +62,7 @@ class LogIn extends React.PureComponent {
       <div className="login">
         <div className="card">
           <div className="title">
-            JFTestCaseManager<span>项目测试用例管理/远程执行平台</span>
+            TestCaseManager<span>项目测试用例管理/远程执行平台</span>
           </div>
           <span
             className={type === '1' ? 'btn btn_active' : 'btn'}

@@ -95,9 +95,9 @@ export default class Home extends React.Component {
         }}
       >
         <Header style={{ zIndex: 9 }}>
-          <img src={logoImg} className="title-logo" alt="wechat-pay-logo" style={{}} />
           <a href="/" style={{ color: '#fff', fontSize: 24 }}>
-            JFTestCaseManager
+            <img src={logoImg} className="title-logo" alt="wechat-pay-logo" />
+            TestCaseManager
           </a>
           {getCookies('username') ? (
             <Dropdown overlay={menu} overlayClassName="dropStyle" placement="bottomLeft">

@@ -42,9 +42,9 @@ class casePage extends React.Component {
     return getCookies('username') ? (
       <section style={{ marginBottom: 30 }}>
         <Header style={{ zIndex: 9 }}>
-          <img src={logoImg} className="title-logo" alt="wechat-pay-logo" />
           <a href="/" style={{ color: '#fff', fontSize: 24 }}>
-            JFTestCaseManager
+            <img src={logoImg} className="title-logo" alt="wechat-pay-logo" />
+            TestCaseManager
           </a>
           {getCookies('username') ? (
             <Dropdown overlay={menu} overlayClassName="dropStyle" placement="bottomLeft">

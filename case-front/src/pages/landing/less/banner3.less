@@ -7,20 +7,19 @@
   position: relative;
   text-align: center;
   border-color: #666;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(6, 102, 219, 0.1) 0%,
-    rgba(6, 102, 219, 0.1) 33.333%,
-    rgba(6, 102, 219, 0.3) 33.333%,
-    rgba(6, 102, 219, 0.3) 66.666%,
-    rgba(6, 102, 219, 0.5) 66.666%,
-    rgba(6, 102, 219, 0.5) 99.999%
-  );
   // background-image: url('https://gw.alipayobjects.com/zos/rmsportal/xTPkCNNLOnTEbGgVZOpE.jpg');
   // background-size: cover;
   // background-attachment: fixed;
-  background-position: center;
+  // wechat green #07C160 -> 7, 193, 96
+  background: radial-gradient(circle at 50% 50%,
+  rgba(7, 193, 96, 0.1) 0%,
+  rgba(7, 193, 96, 0.1) 33.333%,
+  rgba(7, 193, 96, 0.3) 33.333%,
+  rgba(7, 193, 96, 0.3) 66.666%,
+  rgba(7, 193, 96, 0.5) 66.666%,
+  rgba(7, 193, 96, 0.5) 99.999%) center;
   padding: 120px 0px;
+
   & &-text-wrapper {
     // position: absolute;
     // top: 24px;
@@ -35,32 +34,40 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
+
     > .queue-anim-leaving {
       position: relative !important;
     }
   }
+
   & &-slogan {
-    font-size: 56px;
+    // TestCaseManager
+    font-size: 40px;
     line-height: 80px;
     text-indent: 2px;
     font-weight: 600;
     margin: 0px auto 38px;
     overflow: hidden;
   }
+
   & &-logo {
-    width: 54px;
+    // wechat pay logo 的大小
+    height: 50px;
   }
+
   & &-name-en {
     display: block;
     font-size: 14px;
     line-height: 32px;
     font-weight: 400;
   }
+
   & &-name {
     font-size: 24px;
     overflow: hidden;
     opacity: 0.8;
   }
+
   & &-button {
     display: block;
     margin: 72px auto 0;
@@ -76,7 +83,7 @@
     //   rgba(3, 67, 101, 1) 0%,
     //   rgba(0, 27, 51, 1) 100%
     // );
-    box-shadow: 0 8px 16px #0a52ab;
+    box-shadow: 0 8px 16px #07C160;
     border: none;
     transition: background 0.45s @ease-out;
     width: 132px;
@@ -84,6 +91,7 @@
     height: 42px;
     border-radius: 8px;
   }
+
   & &-time {
     font-size: 14px;
     line-height: 24px;
@@ -95,18 +103,22 @@
   .@{banner3} {
     background-attachment: inherit;
     padding: 200px 0px;
+
     & &-text-wrapper {
       width: 90%;
       height: 50%;
     }
+
     & &-name-en {
       font-size: 12px;
     }
+
     & &-slogan {
       font-size: 24px;
       line-height: 1.5;
       margin: 12px 0;
     }
+
     & &-name {
       font-size: 14px;
     }

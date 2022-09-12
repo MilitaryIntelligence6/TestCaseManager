@@ -2,13 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import router from 'umi/router';
+
 import {
   Form,
   Input,
   Icon,
-} from 'react-weui';
-
-import {
   Upload,
   message,
   Modal,

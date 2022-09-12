@@ -18,16 +18,16 @@ import javax.servlet.annotation.WebListener;
 @Component
 public class IocCloseListener implements ServletContextListener {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(IocCloseListener.class);
+    private static Logger logger = LoggerFactory.getLogger(IocCloseListener.class);
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        LOGGER.info("[监听器注册成功..]" + IocCloseListener.class.getName());
+        logger.info("[监听器注册成功..]" + IocCloseListener.class.getName());
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        LOGGER.info("[监听到容器关闭..]" + IocCloseListener.class.getName());
+        logger.info("[监听到容器关闭..]" + IocCloseListener.class.getName());
 //        for (Map.Entry<String, WebSocket> ws : WebSocket.webSocket.entrySet()) {
 //            LOGGER.info("[Session Info]{}", SocketInfo.build(ws.getValue()).toString());
 //        }

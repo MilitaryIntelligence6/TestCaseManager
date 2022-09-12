@@ -15,7 +15,7 @@ export const Banner30DataSource = {
           <div>
             <img src={logoImg} className="banner3-logo" alt="wechat-pay-logo" />
             <br />
-            <span>JFTestCaseManager</span>
+            <span>TestCaseManager</span>
           </div>
         ),
       },
@@ -35,7 +35,7 @@ export const Banner30DataSource = {
           <span style={{ color: '#7d899b' }}>
             以脑图方式编辑可快速上手，用例关联需求形成流程闭环，并支持组件化引用，
             <br />
-            可在各个平台嵌入使用，是测试人员的贴心助手
+            可在各个平台嵌入使用，是开发测试人员的贴心助手
           </span>
         ),
       },
@@ -60,7 +60,7 @@ export const Footer00DataSource = {
     children: (
       <span>
         <p>
-          <span>©2022 JFTestCaseManager</span>
+          <span>©2022 TestCaseManager</span>
         </p>
       </span>
     ),
