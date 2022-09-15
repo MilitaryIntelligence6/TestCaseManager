@@ -15,7 +15,7 @@ export const Banner30DataSource = {
           <div>
             <img src={logoImg} className="banner3-logo" alt="wechat-pay-logo" />
             <br />
-            <span>TestCaseManager</span>
+            <span>终端 IoTTestManager</span>
           </div>
         ),
       },
@@ -60,7 +60,7 @@ export const Footer00DataSource = {
     children: (
       <span>
         <p>
-          <span>©2022 TestCaseManager</span>
+          <span>copyright ©2022 Tencent.inc</span>
         </p>
       </span>
     ),

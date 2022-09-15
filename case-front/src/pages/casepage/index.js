@@ -44,7 +44,7 @@ class casePage extends React.Component {
         <Header style={{ zIndex: 9 }}>
           <a href="/" style={{ color: '#fff', fontSize: 24 }}>
             <img src={logoImg} className="title-logo" alt="wechat-pay-logo" />
-            TestCaseManager
+            终端 IoTTestManager
           </a>
           {getCookies('username') ? (
             <Dropdown overlay={menu} overlayClassName="dropStyle" placement="bottomLeft">
